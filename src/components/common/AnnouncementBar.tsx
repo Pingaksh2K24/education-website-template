@@ -4,7 +4,7 @@ export default function AnnouncementBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="text-sm font-medium">
-            🎓 Admissions Open for 2024-25 | Apply Now | Last Date: March 31, 2024
+            Admissions Open for 2024-25 | Apply Now | Last Date: March 31, 2024
           </span>
         </div>
       </div>

@@ -6,7 +6,6 @@ import AnnouncementBar from "@/components/common/AnnouncementBar";
 import BannerComponent from "@/components/common/BannerComponent";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
