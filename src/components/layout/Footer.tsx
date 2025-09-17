@@ -1,9 +1,8 @@
 "use client";
-import { useState } from "react";
 import { FaGraduationCap, FaPhone, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaLaptopCode } from 'react-icons/fa';
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
+
   return (
     <footer className="relative bg-gradient-to-br from-[#022340] via-[#022340] to-[#022340] text-white overflow-hidden">
       {/* Enhanced Background Pattern */}
@@ -34,7 +33,7 @@ export default function Footer() {
               Excellence in Education
             </h2>
             <p className="text-slate-300 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-6">
-              Empowering minds, shaping futures, and building tomorrow's leaders through quality education and innovation.
+              Empowering minds, shaping futures, and building tomorrow&apos;s leaders through quality education and innovation.
             </p>
             <div className="flex justify-center items-center space-x-4">
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-red-500 to-red-600 rounded-full"></div>
@@ -91,7 +90,7 @@ export default function Footer() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {['Admissions', 'Faculty', 'Events', 'News', 'Alumni'].map((item, index) => (
+                {['Admissions', 'Faculty', 'Events', 'News', 'Alumni', 'Privacy Policy', 'Terms of Service', 'Anti-Ragging Policy', 'Grievance Redressal', 'Accessibility', 'Site Map'].map((item, index) => (
                   <li key={index}>
                     <a href="#" className="text-slate-300 hover:text-orange-300 hover:translate-x-2 transition-all duration-300 flex items-center group">
                       <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -146,7 +145,7 @@ export default function Footer() {
                     { icon: '💼', bg: 'from-blue-700 to-blue-800', hover: 'hover:from-blue-600 hover:to-blue-700' },
                     { icon: '📺', bg: 'from-red-600 to-red-700', hover: 'hover:from-red-500 hover:to-red-600' }
                   ].map((social, index) => {
-                    const icons = [<FaFacebook />, <FaTwitter />, <FaLinkedin />, <FaYoutube />];
+                    const icons = [<FaFacebook key="fb" />, <FaTwitter key="tw" />, <FaLinkedin key="li" />, <FaYoutube key="yt" />];
                     return (
                       <a key={index} href="#" className={`w-12 h-12 bg-gradient-to-br ${social.bg} ${social.hover} rounded-xl flex items-center justify-center transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl`}>
                         <span className="text-lg text-white">{icons[index]}</span>
@@ -180,13 +179,8 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center lg:justify-end gap-8">
-              {['Privacy Policy', 'Terms of Service', 'Accessibility', 'Site Map'].map((item, index) => (
-                <a key={index} href="#" className="text-slate-300 hover:text-orange-300 transition-all duration-300 relative group font-medium text-sm">
-                  {item}
-                  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-600 group-hover:w-full transition-all duration-500"></span>
-                </a>
-              ))}
+            <div className="text-slate-400 text-sm">
+              Made with ❤️ for educational excellence
             </div>
           </div>
         </div>

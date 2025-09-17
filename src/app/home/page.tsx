@@ -1,7 +1,7 @@
 import Button from '@/components/ui/Button';
 import HeroSection from '@/components/common/HeroSection';
 import { FaPalette, FaBriefcase, FaFlask, FaGraduationCap, FaLaptopCode, FaBook, FaUniversity, FaBullseye, FaCheckCircle } from 'react-icons/fa';
-
+import Image from 'next/image';
 export default function HomePage() {
   const courses = [
     { name: 'Bachelor of Arts (BA)', duration: '3 Years', icon: <FaPalette /> },
@@ -113,7 +113,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 group">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img 
+                <Image 
                   src="/images/addmission-section.jpg" 
                   alt="Student" 
                   className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"

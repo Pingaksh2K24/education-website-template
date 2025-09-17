@@ -12,7 +12,7 @@ export default function BannerComponent() {
             
             {/* College Details */}
             <div>
-              <h1 className="text-2xl font-bold text-blue-900">St. Xavier's College</h1>
+              <h1 className="text-2xl font-bold text-blue-900">St. Xavier&apos;s College</h1>
               <p className="text-sm text-gray-600">Affiliated to University of Mumbai</p>
               <p className="text-xs text-gray-500">NAAC A+ Accredited | Established 1869</p>
             </div>

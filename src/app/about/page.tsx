@@ -1,6 +1,6 @@
 'use client';
 import { FaUniversity, FaGraduationCap, FaUsers, FaAward, FaGlobe, FaLightbulb, FaHeart, FaRocket, FaBookOpen, FaChartLine, FaHandshake, FaLeaf } from 'react-icons/fa';
-import { MdSchool, MdScience, MdBusiness, MdComputer } from 'react-icons/md';
+
 import Button from '@/components/ui/Button';
 
 export default function AboutPage() {
@@ -15,7 +15,7 @@ export default function AboutPage() {
     {
       icon: <FaLightbulb />,
       title: 'Innovation',
-      description: 'Fostering creativity and cutting-edge research to solve tomorrow\'s challenges.'
+      description: 'Fostering creativity and cutting-edge research to solve tomorrow&apos;s challenges.'
     },
     {
       icon: <FaHeart />,
@@ -151,11 +151,9 @@ export default function AboutPage() {
             
             <div className="relative">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img 
-                  src="/images/college-building.jpg" 
-                  alt="College Building" 
-                  className="w-full h-96 object-cover"
-                />
+                <div className="w-full h-96 bg-gradient-to-br from-blue-200 to-indigo-300 flex items-center justify-center">
+                  <span className="text-gray-600">Campus Image</span>
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
@@ -212,7 +210,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Historical Milestones</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Key moments that have shaped our institution's legacy of excellence
+              Key moments that have shaped our institution&apos;s legacy of excellence
             </p>
           </div>
           
@@ -259,11 +257,9 @@ export default function AboutPage() {
             {leadership.map((leader, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={leader.image} 
-                    alt={leader.name} 
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  <div className="w-full h-64 bg-gradient-to-br from-gray-200 to-gray-400 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <span className="text-gray-600">Photo</span>
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
