@@ -116,6 +116,8 @@ export default function HomePage() {
                 <Image 
                   src="/images/addmission-section.jpg" 
                   alt="Student" 
+                  width={600}
+                  height={384}
                   className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

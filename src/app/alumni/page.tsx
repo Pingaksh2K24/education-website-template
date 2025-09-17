@@ -206,6 +206,8 @@ export default function AlumniPage() {
                   <Image 
                     src={alumni.image} 
                     alt={alumni.name} 
+                    width={400}
+                    height={192}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -292,6 +294,8 @@ export default function AlumniPage() {
                   <Image 
                     src={event.image} 
                     alt={event.title} 
+                    width={400}
+                    height={192}
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">

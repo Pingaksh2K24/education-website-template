@@ -256,6 +256,8 @@ export default function AcademicsPage() {
                 <Image 
                   src="/images/hero4.jpg" 
                   alt="Research Lab" 
+                  width={600}
+                  height={384}
                   className="w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>

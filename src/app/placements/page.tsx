@@ -191,6 +191,8 @@ export default function PlacementsPage() {
                   <Image 
                     src={company.logo} 
                     alt={company.name} 
+                    width={200}
+                    height={96}
                     className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
@@ -222,6 +224,8 @@ export default function PlacementsPage() {
                   <Image 
                     src={story.image} 
                     alt={story.name} 
+                    width={400}
+                    height={192}
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
